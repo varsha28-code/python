@@ -1,0 +1,14 @@
+def isPowerOfTwo(n):
+    if(n==0):
+        return false
+    return n&(n-1)==0
+n=int(input())
+print(isPowerOfTwo(n))
+
+
+Output:
+15
+False
+
+16
+True
