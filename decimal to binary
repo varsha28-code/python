@@ -1,3 +1,4 @@
+
 n=int(input())
 binaryResult=""
 while(n!=0):
@@ -10,3 +11,11 @@ print(binaryResult[::-1])
 Output:
 4
 100
+
+--------------using bin()-----------------
+n=15
+print(bin(n)[2::])
+
+
+Output:
+1111
