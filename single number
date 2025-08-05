@@ -1,0 +1,12 @@
+def singleNum(nums):
+    res=0
+    for n in nums:
+        res=n^res
+    return res
+nums=list(map(int,input().split()))
+print(singleNum(nums))
+
+
+Output:
+4 4 2 1 2
+1
