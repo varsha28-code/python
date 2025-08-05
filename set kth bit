@@ -1,0 +1,12 @@
+def setKthBit(n,k):
+    n=n|(1<<k)
+    return n
+n=int(input())
+k=int(input())
+print(setKthBit(n,k))
+
+
+Output:
+13
+1
+15
