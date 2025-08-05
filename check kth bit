@@ -1,0 +1,13 @@
+def checkKthBit(n,k):
+    if((n&(1<<k))==0):
+        return False
+    return True
+n=int(input())
+k=int(input())
+print(checkKthBit(n,k))
+
+
+Output:
+13
+1
+False
