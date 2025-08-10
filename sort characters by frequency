@@ -1,0 +1,18 @@
+class Solution:
+    def frequencySort(self,s):
+        d={}
+        for char in s:
+            if(char in d):
+                d[char]=d[char]+1
+            else:
+                d[char]=1
+        u_d=sorted(d.items(),key=lambda x:-x[1])
+        resultString=""
+        for key,value in u_d:
+            for i in range(value):
+                resultString=resultString+key
+        return resultString
+obj=Solution()
+s=input()
+print(obj.frequencySort(s))
+    
