@@ -1,0 +1,70 @@
+def hello():
+    print("hey python")
+print("hey java")
+hello()
+
+Output:
+hey java
+hey python
+-----------------------------------------------
+def fun1():
+    print("hi")
+    fun1()
+fun1()
+
+Output:
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+hi
+------------------------------------------
+def fun1(x):
+   if(x==0):   #base condition
+    return
+   print(x)
+   fun1(x-1)   #starts & ends at function call
+x=4
+fun1(x)
+
+Output:
+4
+3
+2
+1
+---------------------------------------------
+def fun1(x):
+   if(x==0):   
+    return
+   fun1(x-1)
+   print(x)
+x=4
+fun1(x)
+
+Output:
+1
+2
+3
+4
