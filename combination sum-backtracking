@@ -1,0 +1,23 @@
+class Solution:
+    def generate(self,ind,subset,ans,nums,target):
+        if(target==0):
+            ans.append(subset.copy())
+            return
+        if(target<0):
+            return
+        if(ind==len(nums)):
+            return
+        subset.append(nums[ind])
+        self.generate(ind,subset,ans,nums,target-nums[ind])
+        subset.pop()
+        self.generate(ind+1,subset,ans,nums,target)
+    def combinationSum(self,nums,target):
+        ind=0
+        subset=[]
+        ans=[]
+        self.generate(ind,subset,ans,nums,target)
+        return ans
+obj=Solution()
+nums=list(map(int,input().split()))
+target=int(input())
+print(obj.combinationSum(nums,target))
