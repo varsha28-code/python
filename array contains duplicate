@@ -1,0 +1,8 @@
+class Solution:
+    def checkDuplicates(self, arr):
+        seen = set()  # create an empty set
+        for num in arr:
+            if num in seen:   # if duplicate found
+                return True
+            seen.add(num)     # add to set
+        return False          # no duplicates
